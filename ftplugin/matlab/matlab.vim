@@ -54,9 +54,9 @@ set commentstring=%%s
 let s:cpo_sav = &cpo
 set cpo-=C
 
-if !hasmapto('<Plug>mlintRunLint')
-    map <buffer> <unique> <LocalLeader>l <Plug>mlintRunLint
-endif
+" if !hasmapto('<Plug>mlintRunLint')
+"     map <buffer> <unique> <LocalLeader>l <Plug>mlintRunLint
+" endif
 
 if !hasmapto('<Plug>mlintGetLintMessage')
     "map <buffer> <unique> <LocalLeader>m <Plug>mlintGetLintMessage
