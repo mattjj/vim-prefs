@@ -24,6 +24,7 @@ let b:Tlist_Process_File_Always = 0
 
 " `gf` jumps to the filename under the cursor.  Point at an import statement
 " and jump to it!
+if has("python")
 python << EOF
 import os
 import sys
@@ -32,6 +33,7 @@ for p in sys.path:
     if os.path.isdir(p):
         vim.command(r"set path+=%s" % (p.replace(" ", r"\ ")))
 EOF
+endif
 
 "" makes pyflakes not use quickfix, decent fix for using both pylint and
 "" pyflakes for now: pylint gets quickfix window to itself and only gets run
