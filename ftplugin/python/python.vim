@@ -43,3 +43,5 @@ let g:pyflakes_use_quickfix = 0
 "nmap <buffer> <Leader>l :Pylint<CR> :copen <CR>
 "set grepprg=grep\ -n
 
+set foldnestmax=2
+set fdm=indent
