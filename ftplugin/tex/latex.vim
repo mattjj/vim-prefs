@@ -1,5 +1,4 @@
-let g:LatexBox_viewer = 'skim'
-let g:LatexBox_latexmk_options = '-pvc' 
+let g:tex_flavor='latex'
 
 imap <silent> <buffer> ]]  <Plug>LatexCloseCurEnv
 imap <silent> <buffer> <F5> <Plug>LatexChangeEnv

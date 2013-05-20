@@ -1,5 +1,4 @@
 " set omnifunc=pythoncomplete#Complete
-set omnifunc=RopeCompleteFunc
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
 
@@ -15,12 +14,10 @@ let loaded_python_syntax_checker = 1
 if &smartindent
     inoremap <buffer> # X#
 endif
+set commentstring=\#\%s
 
 " Wrap at 80 chars for comments.
 set formatoptions=cq textwidth=80 foldignore= wildignore+=*.py[co]
-
-" experimental: may suck, may do nothing, part of taglist
-let b:Tlist_Process_File_Always = 0
 
 " `gf` jumps to the filename under the cursor.  Point at an import statement
 " and jump to it!
@@ -38,7 +35,7 @@ endif
 "" makes pyflakes not use quickfix, decent fix for using both pylint and
 "" pyflakes for now: pylint gets quickfix window to itself and only gets run
 "" when called, while pyflakes does highlighting.
-let g:pyflakes_use_quickfix = 0 
+let g:pyflakes_use_quickfix = 0
 
 "nmap <buffer> <Leader>l :Pylint<CR> :copen <CR>
 "set grepprg=grep\ -n
