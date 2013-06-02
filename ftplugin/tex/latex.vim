@@ -1,5 +1,3 @@
-let g:tex_flavor='latex'
-
 imap <silent> <buffer> ]]  <Plug>LatexCloseCurEnv
 imap <silent> <buffer> <F5> <Plug>LatexChangeEnv
 vmap <silent> <buffer> <F7> <Plug>LatexWrapSelection
