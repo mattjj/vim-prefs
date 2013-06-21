@@ -1,4 +1,4 @@
-let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$|\.pyc|\.npy$'
+let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|\.pyc\|\.npy$\|\.aux$\|\.fls$\|\.fdb_latexmk$\|\.gz$\|\.pdf$\|\.log$\|deps$'
 let g:ctrlp_extensions = ['tag', 'buffertag']
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_map = '<c-p>'
