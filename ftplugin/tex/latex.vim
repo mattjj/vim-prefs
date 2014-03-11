@@ -34,3 +34,8 @@ command! -nargs=? PushToDropbox call PushToDropbox(<f-args>)
 setlocal spell
 
 set formatoptions=tcqron
+
+let g:ycm_semantic_triggers = {
+            \   'tex' :  ['\ref{','\cite{','\eqref{','\citep{','\citet{'],
+            \ }
+

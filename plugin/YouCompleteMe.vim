@@ -1,6 +1,7 @@
 let g:ycm_filetype_blacklist = {
-            \ 'tex' : 1,
             \ 'markdown' : 1,
             \ 'text' : 1,
             \ 'scheme' : 1,
             \}
+let g:ycm_add_preview_to_completeopt = 1
+let g:ycm_autoclose_preview_window_after_completion = 1
