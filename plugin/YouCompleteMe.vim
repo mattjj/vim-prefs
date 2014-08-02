@@ -5,4 +5,7 @@ let g:ycm_filetype_blacklist = {
             \}
 let g:ycm_add_preview_to_completeopt = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
-let g:ycm_path_to_python_interpreter='/opt/local/bin/python'
+let g:ycm_autoclose_preview_window_after_insertion = 1
+nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
+let g:ycm_path_to_python_interpreter='/usr/bin/python2'
+
