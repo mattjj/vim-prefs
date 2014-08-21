@@ -47,8 +47,8 @@ let b:loaded_py_ftplugin = 1
 
 map  ]t   :PBoB<CR>
 vmap ]t   :<C-U>PBOB<CR>m'gv``
-map  ]n   :PEoB<CR>
-vmap ]n   :<C-U>PEoB<CR>m'gv``
+" map  ]n   :PEoB<CR>
+" vmap ]n   :<C-U>PEoB<CR>m'gv``
 
 map  ]v   ]tV]n
 map  ]<   ]tV]n<
