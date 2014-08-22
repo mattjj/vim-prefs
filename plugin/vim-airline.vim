@@ -1,3 +1,8 @@
+function! AirlineThemePatch(palette)
+  let a:palette.normal.airline_a = [ '#ffffff', '#268bd2', 255, 33 ]
+  let a:palette.normal.airline_z = [ '#ffffff', '#268bd2', 255, 33 ]
+endfunction
+let g:airline_theme_patch_func = 'AirlineThemePatch'
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline#extensions#tabline#enabled = 1
