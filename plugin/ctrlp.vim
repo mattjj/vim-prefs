@@ -4,5 +4,5 @@ let g:ctrlp_working_path_mode = 'wr'
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 nmap <c-b> :CtrlPBuffer<CR>
-nmap <c-c> :CtrlPTag<CR>
-nmap <c-v> :CtrlPBufTag<CR>
+" nmap <c-c> :CtrlPTag<CR>
+nmap <c-c> :CtrlPBufTag<CR>
