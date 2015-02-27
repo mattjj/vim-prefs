@@ -31,7 +31,7 @@ endfun
 
 command! -nargs=? PushToDropbox call PushToDropbox(<f-args>)
 
-setlocal spell
+" setlocal spell
 
 set formatoptions=tcqron
 

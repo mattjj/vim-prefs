@@ -4,9 +4,8 @@ set completeopt=menuone,longest,preview
 
 let python_highlight_all = 1
 set softtabstop=4
-"
-" i want this to disable the syntastic python checking, since i use
-" pyflakes.vim for that separately (it has nicer highlighting and stuff)
+
+let g:syntastic_python_flake8_args='--ignore=E231,E226,W391'
 
 " with smartindent, need this to fix comment indenting, but filetype
 " indent on is much better
