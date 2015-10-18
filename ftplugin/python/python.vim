@@ -5,7 +5,8 @@ set completeopt=menuone,longest,preview
 let python_highlight_all = 1
 set softtabstop=4
 
-let g:syntastic_python_flake8_args='--ignore=E231,E226,W391'
+" let g:syntastic_python_flake8_args='--ignore=E231,E226,W391,E265,E251'
+let g:syntastic_python_flake8_args='--ignore=E265,E226,E225,E221,E231'
 
 " with smartindent, need this to fix comment indenting, but filetype
 " indent on is much better
@@ -13,6 +14,8 @@ if &smartindent
     inoremap <buffer> # X#
 endif
 set commentstring=\#\%s
+set comments-=fb:-
+set comments+=fb:#
 
 " Wrap at 80 chars for comments.
 set formatoptions=cq textwidth=80 foldignore= wildignore+=*.py[co]
